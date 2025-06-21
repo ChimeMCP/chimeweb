@@ -1,0 +1,111 @@
+{
+  "id": "fetch",
+  "name": "Fetch网页内容抓取",
+  "packageName": "@modelcontextprotocol/fetch",
+  "description": "该服务器使大型语言模型能够检索和处理网页内容，将HTML转换为markdown格式，以便于更轻松地使用。",
+  "longDescription": "一个提供网页内容抓取功能的模型上下文协议服务器。此服务器使大型语言模型能够从网页中检索和处理内容，并将 HTML 转换为 markdown 以便更容易地使用。获取工具会截断响应，但通过使用 start_index 参数，您可以指定从何处开始提取内容。这让模型可以分块读取网页，直到找到所需的信息。",
+  "category": "browser-automation",
+  "tags": ["网页抓取", "HTML转换", "Markdown", "内容提取", "官方工具"],
+  "type": "hosted",
+  
+  "stats": {
+    "downloads": 106321,
+    "stars": 10,
+    "views": 25680,
+    "lastUpdated": "2025-06-20T10:30:00Z"
+  },
+  
+  "author": {
+    "name": "modelcontextprotocol",
+    "avatar": "/images/authors/mcp-official.png",
+    "url": "https://github.com/modelcontextprotocol"
+  },
+  
+  "technical": {
+    "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+    "documentation": "https://github.com/modelcontextprotocol/servers/blob/main/src/fetch/README.md",
+    "homepage": "https://modelcontextprotocol.io",
+    "license": "MIT",
+    "version": "1.0.0",
+    "requirements": ["Python 3.8+", "Node.js (可选，用于更健壮的HTML简化器)"]
+  },
+  
+  "tools": [
+    {
+      "name": "fetch",
+      "description": "从互联网上抓取一个 URL 并将其内容作为 markdown 提取",
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": true,
+          "description": "要抓取的 URL"
+        },
+        {
+          "name": "max_length",
+          "type": "integer",
+          "required": false,
+          "description": "返回的最大字符数 (默认: 5000)"
+        },
+        {
+          "name": "start_index",
+          "type": "integer", 
+          "required": false,
+          "description": "从此字符索引开始提取内容 (默认: 0)"
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "required": false,
+          "description": "获取未经 markdown 转换的原始内容 (默认: false)"
+        }
+      ]
+    }
+  ],
+  
+  "installation": {
+    "command": "uvx mcp-server-fetch",
+    "config": {
+      "mcpServers": {
+        "fetch": {
+          "command": "uvx",
+          "args": ["mcp-server-fetch"]
+        }
+      }
+    },
+    "notes": "推荐使用 uv 安装，也可以通过 pip install mcp-server-fetch 安装"
+  },
+  
+  "examples": [
+    {
+      "title": "抓取网页内容",
+      "description": "获取指定URL的网页内容并转换为Markdown格式",
+      "code": "{\n  \"tool\": \"fetch\",\n  \"parameters\": {\n    \"url\": \"https://example.com\",\n    \"max_length\": 5000\n  }\n}",
+      "result": "成功抓取网页内容，已转换为Markdown格式"
+    },
+    {
+      "title": "分块读取长网页",
+      "description": "使用start_index参数分块读取长网页内容",
+      "code": "{\n  \"tool\": \"fetch\",\n  \"parameters\": {\n    \"url\": \"https://long-article.com\",\n    \"start_index\": 5000,\n    \"max_length\": 5000\n  }\n}",
+      "result": "从第5000个字符开始读取后续5000个字符的内容"
+    },
+    {
+      "title": "获取原始HTML",
+      "description": "获取未经转换的原始HTML内容",
+      "code": "{\n  \"tool\": \"fetch\",\n  \"parameters\": {\n    \"url\": \"https://example.com\",\n    \"raw\": true\n  }\n}",
+      "result": "返回原始HTML内容，未进行Markdown转换"
+    }
+  ],
+  
+  "reviews": {
+    "rating": 4.8,
+    "count": 156,
+    "distribution": {
+      "5": 120,
+      "4": 28,
+      "3": 6,
+      "2": 1,
+      "1": 1
+    }
+  }
+} 

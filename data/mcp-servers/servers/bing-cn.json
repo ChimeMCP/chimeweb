@@ -1,0 +1,174 @@
+{
+  "id": "bing-cn",
+  "name": "必应搜索",
+  "packageName": "@search/bing-cn",
+  "description": "基于必应搜索API的MCP服务器，提供网络搜索、新闻搜索、图片搜索等功能，支持中文搜索优化。",
+  "longDescription": "必应搜索MCP服务器集成微软必应搜索引擎的强大功能，为AI应用提供实时的网络信息检索能力。支持网页搜索、新闻搜索、图片搜索、视频搜索等多种搜索类型，特别针对中文搜索进行了优化，能够准确理解中文查询意图并返回相关度高的搜索结果。",
+  "category": "search-tools",
+  "tags": ["搜索引擎", "必应", "网络搜索", "新闻搜索", "中文优化"],
+  "type": "hosted",
+  
+  "stats": {
+    "downloads": 52800,
+    "stars": 16,
+    "views": 14200,
+    "lastUpdated": "2025-06-18T14:15:00Z"
+  },
+  
+  "author": {
+    "name": "search-tools",
+    "avatar": "/images/authors/search-tools.png",
+    "url": "https://github.com/search-tools"
+  },
+  
+  "technical": {
+    "repository": "https://github.com/search-tools/bing-cn-mcp",
+    "documentation": "https://docs.search-tools.com/bing-cn",
+    "homepage": "https://search-tools.com/bing-cn",
+    "license": "MIT",
+    "version": "1.3.2",
+    "requirements": ["必应搜索API Key", "网络连接"]
+  },
+  
+  "tools": [
+    {
+      "name": "web_search",
+      "description": "网页搜索，在必应搜索引擎中搜索网页内容",
+      "parameters": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true,
+          "description": "搜索查询关键词"
+        },
+        {
+          "name": "count",
+          "type": "integer",
+          "required": false,
+          "description": "返回结果数量，默认10，最大50"
+        },
+        {
+          "name": "market",
+          "type": "string",
+          "required": false,
+          "description": "搜索市场，默认zh-CN"
+        },
+        {
+          "name": "safe_search",
+          "type": "string",
+          "required": false,
+          "description": "安全搜索级别：Off, Moderate, Strict"
+        }
+      ]
+    },
+    {
+      "name": "news_search",
+      "description": "新闻搜索，搜索最新的新闻资讯",
+      "parameters": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true,
+          "description": "新闻搜索关键词"
+        },
+        {
+          "name": "count",
+          "type": "integer",
+          "required": false,
+          "description": "返回新闻数量，默认10"
+        },
+        {
+          "name": "freshness",
+          "type": "string",
+          "required": false,
+          "description": "新闻时效性：Day, Week, Month"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "required": false,
+          "description": "新闻分类：Technology, Business, Sports等"
+        }
+      ]
+    },
+    {
+      "name": "image_search",
+      "description": "图片搜索，搜索相关图片资源",
+      "parameters": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true,
+          "description": "图片搜索关键词"
+        },
+        {
+          "name": "count",
+          "type": "integer",
+          "required": false,
+          "description": "返回图片数量，默认20"
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "required": false,
+          "description": "图片尺寸：Small, Medium, Large, Wallpaper"
+        },
+        {
+          "name": "image_type",
+          "type": "string",
+          "required": false,
+          "description": "图片类型：Photo, Clipart, Line, Shopping"
+        }
+      ]
+    }
+  ],
+  
+  "installation": {
+    "command": "npm install @search/bing-cn-mcp",
+    "config": {
+      "mcpServers": {
+        "bing-cn": {
+          "command": "node",
+          "args": ["node_modules/@search/bing-cn-mcp/dist/index.js"],
+          "env": {
+            "BING_API_KEY": "your_bing_api_key"
+          }
+        }
+      }
+    },
+    "notes": "需要申请必应搜索API Key，可在Microsoft Azure Portal获取"
+  },
+  
+  "examples": [
+    {
+      "title": "网页搜索",
+      "description": "搜索关于人工智能的最新信息",
+      "code": "{\n  \"tool\": \"web_search\",\n  \"parameters\": {\n    \"query\": \"人工智能最新发展\",\n    \"count\": 10,\n    \"market\": \"zh-CN\"\n  }\n}",
+      "result": "返回10条关于人工智能最新发展的网页搜索结果"
+    },
+    {
+      "title": "新闻搜索",
+      "description": "搜索今日科技新闻",
+      "code": "{\n  \"tool\": \"news_search\",\n  \"parameters\": {\n    \"query\": \"科技新闻\",\n    \"count\": 15,\n    \"freshness\": \"Day\",\n    \"category\": \"Technology\"\n  }\n}",
+      "result": "返回15条今日最新科技新闻"
+    },
+    {
+      "title": "图片搜索",
+      "description": "搜索风景图片",
+      "code": "{\n  \"tool\": \"image_search\",\n  \"parameters\": {\n    \"query\": \"美丽风景\",\n    \"count\": 20,\n    \"size\": \"Large\",\n    \"image_type\": \"Photo\"\n  }\n}",
+      "result": "返回20张高质量的风景照片"
+    }
+  ],
+  
+  "reviews": {
+    "rating": 4.7,
+    "count": 124,
+    "distribution": {
+      "5": 89,
+      "4": 28,
+      "3": 5,
+      "2": 1,
+      "1": 1
+    }
+  }
+} 

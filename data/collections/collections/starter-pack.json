@@ -1,0 +1,32 @@
+{
+  "id": "starter-pack",
+  "title": "🚀 MCP新手入门必备包",
+  "description": "精选10个最实用的MCP Server，让你快速上手MCP生态，涵盖网页抓取、搜索、地图、文件管理等核心功能。",
+  "cover": "/images/collections/starter-pack-cover.jpg",
+  "author": {
+    "name": "编钟官方",
+    "avatar": "/images/authors/chime-official.png"
+  },
+  "servers": [
+    "fetch",
+    "amap-maps", 
+    "bing-cn",
+    "filesystem-mcp",
+    "time-service",
+    "github-mcp",
+    "obsidian-mcp",
+    "weather-mcp",
+    "translator-mcp",
+    "calculator-mcp"
+  ],
+  "stats": {
+    "views": 15680,
+    "likes": 892,
+    "createdAt": "2025-06-15T10:00:00Z",
+    "updatedAt": "2025-06-20T14:30:00Z"
+  },
+  "featured": true,
+  "tags": ["新手入门", "必备工具", "官方推荐"],
+  "difficulty": "beginner",
+  "estimatedSetupTime": "30分钟"
+} 

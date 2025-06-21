@@ -1,0 +1,109 @@
+{
+  "categories": [
+    {
+      "id": "browser-automation",
+      "name": "浏览器自动化",
+      "description": "网页自动化、爬虫、浏览器控制等工具",
+      "icon": "🌐",
+      "count": 291,
+      "featured": ["fetch", "playwright-mcp", "crawl-mcp"]
+    },
+    {
+      "id": "search-tools",
+      "name": "搜索工具",
+      "description": "搜索引擎、信息检索、数据查询工具",
+      "icon": "🔍",
+      "count": 597,
+      "featured": ["bing-cn", "tavily-search", "jina-ai-tools"]
+    },
+    {
+      "id": "collaboration",
+      "name": "交流协作工具",
+      "description": "团队协作、通信、项目管理工具",
+      "icon": "🤝",
+      "count": 229,
+      "featured": ["slack-mcp", "notion-mcp", "teams-mcp"]
+    },
+    {
+      "id": "developer-tools",
+      "name": "开发者工具",
+      "description": "代码管理、部署、调试、版本控制工具",
+      "icon": "⚡",
+      "count": 1171,
+      "featured": ["gitlab", "github-mcp", "docker-mcp"]
+    },
+    {
+      "id": "entertainment-media",
+      "name": "娱乐与多媒体",
+      "description": "音视频处理、游戏、娱乐应用工具",
+      "icon": "🎬",
+      "count": 103,
+      "featured": ["allvoicelab", "minimax", "mobvoi-mcp"]
+    },
+    {
+      "id": "file-system",
+      "name": "文件系统",
+      "description": "文件管理、存储、同步、备份工具",
+      "icon": "📁",
+      "count": 205,
+      "featured": ["filesystem-mcp", "cloud-storage", "backup-mcp"]
+    },
+    {
+      "id": "finance",
+      "name": "金融",
+      "description": "支付、交易、金融数据、财务管理工具",
+      "icon": "💰",
+      "count": 219,
+      "featured": ["alipay", "unionpay", "finance-data"]
+    },
+    {
+      "id": "knowledge-memory",
+      "name": "知识管理与记忆",
+      "description": "笔记、知识库、记忆管理、学习工具",
+      "icon": "🧠",
+      "count": 257,
+      "featured": ["openmemory", "flomo", "obsidian-mcp"]
+    },
+    {
+      "id": "location-services",
+      "name": "位置服务",
+      "description": "地图、导航、位置查询、地理信息工具",
+      "icon": "📍",
+      "count": 69,
+      "featured": ["amap-maps", "baidu-maps", "location-mcp"]
+    },
+    {
+      "id": "culture-arts",
+      "name": "文化与艺术",
+      "description": "艺术创作、文化内容、创意工具",
+      "icon": "🎨",
+      "count": 43,
+      "featured": ["art-generator", "culture-mcp", "creative-tools"]
+    },
+    {
+      "id": "academic-research",
+      "name": "学术研究",
+      "description": "学术资源、研究工具、论文管理、数据分析",
+      "icon": "📚",
+      "count": 213,
+      "featured": ["academic-search", "research-tools", "paper-mcp"]
+    },
+    {
+      "id": "schedule-management",
+      "name": "日程管理",
+      "description": "日历、提醒、时间管理、任务规划工具",
+      "icon": "📅",
+      "count": 52,
+      "featured": ["calendar-mcp", "time-service", "schedule-tools"]
+    },
+    {
+      "id": "others",
+      "name": "其他",
+      "description": "其他未分类的实用工具和服务",
+      "icon": "🔧",
+      "count": 284,
+      "featured": ["misc-tools", "utility-mcp", "general-tools"]
+    }
+  ],
+  "lastUpdated": "2025-06-20T14:30:00Z"
+} 

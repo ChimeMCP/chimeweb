@@ -1,0 +1,53 @@
+{
+  "featured": [
+    {
+      "id": "fetch",
+      "title": "网页内容抓取神器",
+      "subtitle": "轻松获取任何网页内容，智能转换为Markdown格式",
+      "image": "/images/mcp/fetch-banner.jpg",
+      "highlight": "106K+ 下载量",
+      "badge": "官方推荐"
+    },
+    {
+      "id": "amap-maps",
+      "title": "高德地图服务",
+      "subtitle": "专业的地理位置服务，支持路线规划和POI搜索",
+      "image": "/images/mcp/amap-banner.jpg", 
+      "highlight": "66K+ 下载量",
+      "badge": "企业级"
+    },
+    {
+      "id": "alipay",
+      "title": "支付宝MCP",
+      "subtitle": "集成支付宝开放平台，支持交易创建、查询、退款",
+      "image": "/images/mcp/alipay-banner.jpg",
+      "highlight": "32K+ 下载量", 
+      "badge": "金融级"
+    },
+    {
+      "id": "minimax",
+      "title": "MiniMax多媒体",
+      "subtitle": "AI驱动的语音生成、视频制作和图像创建",
+      "image": "/images/mcp/minimax-banner.jpg",
+      "highlight": "12K+ 下载量",
+      "badge": "AI驱动"
+    }
+  ],
+  "banners": [
+    {
+      "title": "🎉 编钟MCP市场正式上线！",
+      "description": "发现4000+优质MCP Server，一键集成到你的工作流",
+      "action": "立即探索",
+      "link": "/mcp-market",
+      "type": "announcement"
+    },
+    {
+      "title": "🚀 一键添加到编钟工作流",
+      "description": "选择MCP Server，自动生成YAML配置，无需手动编写",
+      "action": "了解更多",
+      "link": "/docs/mcp-integration", 
+      "type": "feature"
+    }
+  ],
+  "lastUpdated": "2025-06-20T14:30:00Z"
+} 

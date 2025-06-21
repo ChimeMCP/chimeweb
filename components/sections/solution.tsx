@@ -1,0 +1,208 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import { ArrowRight, CheckCircle, Zap, Users, Shield } from 'lucide-react'
+
+export function SolutionSection() {
+  return (
+    <section className="py-24 bg-white">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center mb-16">
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-heading mb-4">
+              ✨ 编钟的革命性解决方案
+            </h2>
+            <p className="text-lg text-gray-600">
+              基于"MCP 唤醒 MCP"协作模式，让AI工具协作变得简单而强大
+            </p>
+          </motion.div>
+        </div>
+
+        {/* MCP协作模式对比 */}
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">
+              "MCP 唤醒 MCP" 协作模式
+            </h3>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* 传统模式 */}
+              <div className="bg-red-50 rounded-xl p-6 border border-red-200">
+                <h4 className="font-semibold text-red-800 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                  传统模式 (局限)
+                </h4>
+                <div className="text-center">
+                  <div className="text-sm text-gray-600 mb-2">用户 → AI → 单个MCP Server</div>
+                  <div className="inline-flex items-center space-x-2 text-red-600">
+                    <span className="px-3 py-1 bg-blue-100 rounded">用户</span>
+                    <ArrowRight className="h-4 w-4" />
+                    <span className="px-3 py-1 bg-green-100 rounded">AI</span>
+                    <ArrowRight className="h-4 w-4" />
+                    <span className="px-3 py-1 bg-orange-100 rounded">单一工具</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 编钟模式 */}
+              <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                <h4 className="font-semibold text-green-800 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                  编钟模式 (强大)
+                </h4>
+                <div className="text-center">
+                  <div className="text-sm text-gray-600 mb-2">用户 → 编钟 → AI智能协调多个MCP Server</div>
+                  <div className="space-y-2">
+                    <div className="inline-flex items-center space-x-2 text-green-600">
+                      <span className="px-3 py-1 bg-blue-100 rounded">用户</span>
+                      <ArrowRight className="h-4 w-4" />
+                      <span className="px-3 py-1 chime-gradient text-white rounded font-bold">编钟</span>
+                      <ArrowRight className="h-4 w-4" />
+                      <span className="px-3 py-1 bg-green-100 rounded">AI协调</span>
+                    </div>
+                    <div className="text-xs text-gray-500">↓</div>
+                    <div className="flex justify-center space-x-1">
+                      <span className="px-2 py-1 bg-orange-100 rounded text-xs">工具A</span>
+                      <span className="px-2 py-1 bg-purple-100 rounded text-xs">工具B</span>
+                      <span className="px-2 py-1 bg-pink-100 rounded text-xs">工具C</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* 真实案例展示 */}
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <div className="bg-gradient-to-br from-chime-gold/10 to-chime-bronze/10 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">
+              真实案例：30秒完成复杂任务
+            </h3>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* 之前 */}
+              <div className="bg-white rounded-xl p-6 shadow-sm">
+                <h4 className="font-semibold text-red-600 mb-4">❌ 之前：手动操作10分钟</h4>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li>• 复制微信文章链接</li>
+                  <li>• 手动打开网页抓取工具</li>
+                  <li>• 调试抓取参数</li>
+                  <li>• 格式化内容</li>
+                  <li>• 手动导入Obsidian</li>
+                  <li>• 整理分类和标签</li>
+                </ul>
+              </div>
+
+              {/* 现在 */}
+              <div className="bg-white rounded-xl p-6 shadow-sm">
+                <h4 className="font-semibold text-green-600 mb-4">✅ 现在：一句话30秒</h4>
+                <div className="space-y-3">
+                  <div className="bg-blue-50 p-3 rounded-lg">
+                    <div className="text-sm font-medium text-blue-800">用户说：</div>
+                    <div className="text-sm text-blue-600">"保存这篇微信文章到Obsidian"</div>
+                  </div>
+                  
+                  <div className="flex items-center justify-center">
+                    <ArrowRight className="h-4 w-4 text-gray-400" />
+                  </div>
+                  
+                  <div className="bg-chime-gold/10 p-3 rounded-lg">
+                    <div className="text-sm font-medium text-chime-gold">编钟处理：</div>
+                    <div className="text-xs text-gray-600 space-y-1">
+                      <div>理解需求 → 匹配模板 → 生成指令</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-center">
+                    <ArrowRight className="h-4 w-4 text-gray-400" />
+                  </div>
+                  
+                  <div className="bg-green-50 p-3 rounded-lg">
+                    <div className="text-sm font-medium text-green-800">AI自动执行：</div>
+                    <div className="text-xs text-gray-600">
+                      crawl-mcp → playwright-mcp → obsidian-mcp
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-100 p-3 rounded-lg text-center">
+                    <div className="text-sm font-medium text-green-800">
+                      ✅ 文章已保存到Obsidian/Articles文件夹
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* 三层保障体系 */}
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-2xl font-bold text-center mb-12 text-gray-900">
+            三层保障体系
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="h-16 w-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                <Zap className="h-8 w-8 text-blue-600" />
+              </div>
+              <h4 className="text-xl font-semibold mb-3 text-gray-900">智能理解</h4>
+              <p className="text-gray-600">
+                自然语言 → 精确执行计划
+                <br />
+                <span className="text-sm text-blue-600">AI智能解析用户意图</span>
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="h-16 w-16 mx-auto mb-4 rounded-full bg-chime-gold/20 flex items-center justify-center">
+                <Users className="h-8 w-8 text-chime-gold" />
+              </div>
+              <h4 className="text-xl font-semibold mb-3 text-gray-900">专业执行</h4>
+              <p className="text-gray-600">
+                经过验证的最佳实践模板
+                <br />
+                <span className="text-sm text-chime-gold">98.5%成功率保障</span>
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="h-16 w-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+                <Shield className="h-8 w-8 text-green-600" />
+              </div>
+              <h4 className="text-xl font-semibold mb-3 text-gray-900">质量保证</h4>
+              <p className="text-gray-600">
+                实时监控 + 自动验证
+                <br />
+                <span className="text-sm text-green-600">完整的质量检查机制</span>
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  )
+} 

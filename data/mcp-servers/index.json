@@ -1,0 +1,44 @@
+{
+  "totalServers": 4004,
+  "totalCategories": 13,
+  "lastUpdated": "2025-06-20T14:30:00Z",
+  "featured": [
+    "fetch",
+    "amap-maps", 
+    "bing-cn",
+    "allvoicelab",
+    "12306-mcp",
+    "alipay"
+  ],
+  "popular": [
+    "fetch",
+    "amap-maps",
+    "bing-cn", 
+    "tavily-search",
+    "minimax",
+    "firecrawl",
+    "time-service",
+    "sequential-thinking",
+    "today-eat-what",
+    "gitlab"
+  ],
+  "recent": [
+    "edgeone-pages",
+    "elasticsearch", 
+    "xiyan-mcp",
+    "weread",
+    "mobvoi-mcp",
+    "variflight",
+    "deepwiki",
+    "gezhe-ppt",
+    "unionpay",
+    "umeng"
+  ],
+  "stats": {
+    "hostedServers": 2402,
+    "localServers": 1602,
+    "averageRating": 4.2,
+    "totalDownloads": 15680000,
+    "activeContributors": 1250
+  }
+} 

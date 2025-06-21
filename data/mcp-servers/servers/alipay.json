@@ -1,0 +1,183 @@
+{
+  "id": "alipay",
+  "name": "支付宝MCP",
+  "packageName": "@alipay/mcp-server-alipay",
+  "description": "支付宝开放平台MCP服务器，提供支付、交易查询、退款、账户管理等金融服务功能。",
+  "longDescription": "支付宝MCP服务器基于支付宝开放平台API，为开发者提供完整的支付解决方案。支持扫码支付、APP支付、网页支付等多种支付方式，同时提供交易查询、退款处理、账户余额查询等功能。严格遵循金融级安全标准，确保交易安全和数据隐私。",
+  "category": "finance",
+  "tags": ["支付宝", "在线支付", "金融服务", "交易处理", "电商"],
+  "type": "hosted",
+  
+  "stats": {
+    "downloads": 32400,
+    "stars": 20,
+    "views": 15600,
+    "lastUpdated": "2025-06-19T15:20:00Z"
+  },
+  
+  "author": {
+    "name": "Alipay",
+    "avatar": "/images/authors/alipay.png",
+    "url": "https://open.alipay.com"
+  },
+  
+  "technical": {
+    "repository": "https://github.com/alipay/mcp-server-alipay",
+    "documentation": "https://opendocs.alipay.com/mcp-server",
+    "homepage": "https://open.alipay.com",
+    "license": "Apache-2.0",
+    "version": "3.1.0",
+    "requirements": ["支付宝应用APPID", "支付宝私钥", "支付宝公钥", "网络连接"]
+  },
+  
+  "tools": [
+    {
+      "name": "create_payment",
+      "description": "创建支付订单",
+      "parameters": [
+        {
+          "name": "out_trade_no",
+          "type": "string",
+          "required": true,
+          "description": "商户订单号，唯一标识"
+        },
+        {
+          "name": "total_amount",
+          "type": "string",
+          "required": true,
+          "description": "订单总金额，单位为元，精确到小数点后两位"
+        },
+        {
+          "name": "subject",
+          "type": "string",
+          "required": true,
+          "description": "订单标题"
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "required": false,
+          "description": "订单描述"
+        },
+        {
+          "name": "payment_method",
+          "type": "string",
+          "required": false,
+          "description": "支付方式：qr_code, app, web"
+        }
+      ]
+    },
+    {
+      "name": "query_payment",
+      "description": "查询支付订单状态",
+      "parameters": [
+        {
+          "name": "out_trade_no",
+          "type": "string",
+          "required": false,
+          "description": "商户订单号"
+        },
+        {
+          "name": "trade_no",
+          "type": "string",
+          "required": false,
+          "description": "支付宝交易号"
+        }
+      ]
+    },
+    {
+      "name": "refund_payment",
+      "description": "申请退款",
+      "parameters": [
+        {
+          "name": "out_trade_no",
+          "type": "string",
+          "required": true,
+          "description": "原支付订单号"
+        },
+        {
+          "name": "refund_amount",
+          "type": "string",
+          "required": true,
+          "description": "退款金额，不能超过原订单金额"
+        },
+        {
+          "name": "refund_reason",
+          "type": "string",
+          "required": false,
+          "description": "退款原因"
+        },
+        {
+          "name": "out_request_no",
+          "type": "string",
+          "required": false,
+          "description": "退款请求号，用于标识一次退款请求"
+        }
+      ]
+    },
+    {
+      "name": "get_account_info",
+      "description": "获取账户信息",
+      "parameters": [
+        {
+          "name": "info_type",
+          "type": "string",
+          "required": false,
+          "description": "信息类型：balance, profile, transaction_summary"
+        }
+      ]
+    }
+  ],
+  
+  "installation": {
+    "command": "npm install @alipay/mcp-server-alipay",
+    "config": {
+      "mcpServers": {
+        "alipay": {
+          "command": "node",
+          "args": ["node_modules/@alipay/mcp-server-alipay/dist/index.js"],
+          "env": {
+            "ALIPAY_APP_ID": "your_app_id",
+            "ALIPAY_PRIVATE_KEY": "your_private_key",
+            "ALIPAY_PUBLIC_KEY": "alipay_public_key",
+            "ALIPAY_GATEWAY": "https://openapi.alipay.com/gateway.do"
+          }
+        }
+      }
+    },
+    "notes": "需要在支付宝开放平台创建应用并获取相关密钥"
+  },
+  
+  "examples": [
+    {
+      "title": "创建支付订单",
+      "description": "创建一个扫码支付订单",
+      "code": "{\n  \"tool\": \"create_payment\",\n  \"parameters\": {\n    \"out_trade_no\": \"ORDER_20250620_001\",\n    \"total_amount\": \"99.00\",\n    \"subject\": \"编钟MCP服务费\",\n    \"body\": \"编钟MCP高级服务年费\",\n    \"payment_method\": \"qr_code\"\n  }\n}",
+      "result": "返回支付二维码和订单信息"
+    },
+    {
+      "title": "查询支付状态",
+      "description": "查询订单支付状态",
+      "code": "{\n  \"tool\": \"query_payment\",\n  \"parameters\": {\n    \"out_trade_no\": \"ORDER_20250620_001\"\n  }\n}",
+      "result": "返回订单状态：已支付、待支付、已关闭等"
+    },
+    {
+      "title": "申请退款",
+      "description": "为已支付订单申请部分退款",
+      "code": "{\n  \"tool\": \"refund_payment\",\n  \"parameters\": {\n    \"out_trade_no\": \"ORDER_20250620_001\",\n    \"refund_amount\": \"50.00\",\n    \"refund_reason\": \"用户申请退款\",\n    \"out_request_no\": \"REFUND_20250620_001\"\n  }\n}",
+      "result": "退款申请成功，预计1-3个工作日到账"
+    }
+  ],
+  
+  "reviews": {
+    "rating": 4.8,
+    "count": 156,
+    "distribution": {
+      "5": 125,
+      "4": 25,
+      "3": 4,
+      "2": 1,
+      "1": 1
+    }
+  }
+} 

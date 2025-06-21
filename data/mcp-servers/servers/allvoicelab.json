@@ -1,0 +1,150 @@
+{
+  "id": "allvoicelab",
+  "name": "趣丸千音",
+  "packageName": "@allvoicelab/AllVoiceLab",
+  "description": "趣丸千音AI语音合成服务，提供高质量的语音生成和音频处理功能，支持多种音色和语言。",
+  "longDescription": "趣丸千音是一款专业的AI语音合成工具，基于先进的深度学习技术，能够生成自然流畅的语音内容。支持多种音色选择、语速调节、情感表达等功能，广泛应用于内容创作、语音助手、有声读物等场景。",
+  "category": "entertainment-media",
+  "tags": ["语音合成", "AI语音", "音频处理", "内容创作", "多媒体"],
+  "type": "hosted",
+  
+  "stats": {
+    "downloads": 12500,
+    "stars": 8,
+    "views": 8900,
+    "lastUpdated": "2025-06-17T09:45:00Z"
+  },
+  
+  "author": {
+    "name": "AllVoiceLab",
+    "avatar": "/images/authors/allvoicelab.png",
+    "url": "https://www.allvoicelab.com"
+  },
+  
+  "technical": {
+    "repository": "https://github.com/AllVoiceLab/mcp-server",
+    "documentation": "https://docs.allvoicelab.com/mcp-server",
+    "homepage": "https://www.allvoicelab.com",
+    "license": "MIT",
+    "version": "1.2.1",
+    "requirements": ["AllVoiceLab API Key", "网络连接", "Node.js 16+"]
+  },
+  
+  "tools": [
+    {
+      "name": "text_to_speech",
+      "description": "将文本转换为自然的语音音频",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "required": true,
+          "description": "要转换为语音的文本内容"
+        },
+        {
+          "name": "voice_id",
+          "type": "string",
+          "required": false,
+          "description": "音色ID，默认使用标准音色"
+        },
+        {
+          "name": "speed",
+          "type": "number",
+          "required": false,
+          "description": "语速倍率，范围0.5-2.0，默认1.0"
+        },
+        {
+          "name": "emotion",
+          "type": "string",
+          "required": false,
+          "description": "情感类型：neutral, happy, sad, angry, excited"
+        }
+      ]
+    },
+    {
+      "name": "get_voices",
+      "description": "获取可用的音色列表",
+      "parameters": [
+        {
+          "name": "language",
+          "type": "string",
+          "required": false,
+          "description": "语言代码，如zh-CN, en-US"
+        },
+        {
+          "name": "gender",
+          "type": "string",
+          "required": false,
+          "description": "性别筛选：male, female"
+        }
+      ]
+    },
+    {
+      "name": "audio_enhance",
+      "description": "音频增强和后处理",
+      "parameters": [
+        {
+          "name": "audio_url",
+          "type": "string",
+          "required": true,
+          "description": "音频文件URL"
+        },
+        {
+          "name": "enhance_type",
+          "type": "string",
+          "required": false,
+          "description": "增强类型：denoise, amplify, normalize"
+        }
+      ]
+    }
+  ],
+  
+  "installation": {
+    "command": "npm install @allvoicelab/mcp-server",
+    "config": {
+      "mcpServers": {
+        "allvoicelab": {
+          "command": "node",
+          "args": ["node_modules/@allvoicelab/mcp-server/dist/index.js"],
+          "env": {
+            "ALLVOICELAB_API_KEY": "your_api_key"
+          }
+        }
+      }
+    },
+    "notes": "需要注册AllVoiceLab账号并获取API Key"
+  },
+  
+  "examples": [
+    {
+      "title": "文本转语音",
+      "description": "将中文文本转换为自然的语音",
+      "code": "{\n  \"tool\": \"text_to_speech\",\n  \"parameters\": {\n    \"text\": \"欢迎使用趣丸千音AI语音合成服务\",\n    \"voice_id\": \"zh-CN-female-01\",\n    \"speed\": 1.0,\n    \"emotion\": \"happy\"\n  }\n}",
+      "result": "生成高质量的中文女声音频文件"
+    },
+    {
+      "title": "获取音色列表",
+      "description": "查看所有可用的中文音色",
+      "code": "{\n  \"tool\": \"get_voices\",\n  \"parameters\": {\n    \"language\": \"zh-CN\",\n    \"gender\": \"female\"\n  }\n}",
+      "result": "返回15个中文女声音色选项"
+    },
+    {
+      "title": "音频增强",
+      "description": "对生成的音频进行降噪处理",
+      "code": "{\n  \"tool\": \"audio_enhance\",\n  \"parameters\": {\n    \"audio_url\": \"https://example.com/audio.mp3\",\n    \"enhance_type\": \"denoise\"\n  }\n}",
+      "result": "返回降噪后的高质量音频文件"
+    }
+  ],
+  
+  "reviews": {
+    "rating": 4.5,
+    "count": 67,
+    "distribution": {
+      "5": 42,
+      "4": 18,
+      "3": 5,
+      "2": 1,
+      "1": 1
+    }
+  }
+} 

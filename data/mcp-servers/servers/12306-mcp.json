@@ -1,0 +1,171 @@
+{
+  "id": "12306-mcp",
+  "name": "12306车票查询",
+  "packageName": "@joooook/12306-mcp",
+  "description": "中国铁路12306官方数据接口，提供火车票查询、余票监控、车次信息等功能，支持实时数据获取。",
+  "longDescription": "12306 MCP服务器集成中国铁路客户服务中心的官方数据接口，为用户提供准确的火车票信息查询服务。支持余票查询、车次时刻表、票价查询、站点信息等功能，数据实时更新，确保信息准确性。适用于出行规划、票务查询、旅行助手等应用场景。",
+  "category": "schedule-management",
+  "tags": ["火车票", "12306", "出行查询", "余票监控", "交通工具"],
+  "type": "hosted",
+  
+  "stats": {
+    "downloads": 8900,
+    "stars": 12,
+    "views": 6700,
+    "lastUpdated": "2025-06-16T11:30:00Z"
+  },
+  
+  "author": {
+    "name": "Joooook",
+    "avatar": "/images/authors/joooook.png",
+    "url": "https://github.com/Joooook"
+  },
+  
+  "technical": {
+    "repository": "https://github.com/Joooook/12306-mcp",
+    "documentation": "https://github.com/Joooook/12306-mcp/blob/main/README.md",
+    "homepage": "https://www.12306.cn",
+    "license": "MIT",
+    "version": "2.0.3",
+    "requirements": ["网络连接", "Node.js 14+"]
+  },
+  
+  "tools": [
+    {
+      "name": "query_tickets",
+      "description": "查询指定日期和线路的火车票余票信息",
+      "parameters": [
+        {
+          "name": "from_station",
+          "type": "string",
+          "required": true,
+          "description": "出发站名称，如'北京'"
+        },
+        {
+          "name": "to_station",
+          "type": "string",
+          "required": true,
+          "description": "到达站名称，如'上海'"
+        },
+        {
+          "name": "train_date",
+          "type": "string",
+          "required": true,
+          "description": "乘车日期，格式YYYY-MM-DD"
+        },
+        {
+          "name": "train_type",
+          "type": "string",
+          "required": false,
+          "description": "车次类型筛选：G(高铁), D(动车), T(特快), K(快速)"
+        }
+      ]
+    },
+    {
+      "name": "get_train_info",
+      "description": "获取指定车次的详细信息和时刻表",
+      "parameters": [
+        {
+          "name": "train_no",
+          "type": "string",
+          "required": true,
+          "description": "车次号，如G1, D301"
+        },
+        {
+          "name": "train_date",
+          "type": "string",
+          "required": true,
+          "description": "查询日期，格式YYYY-MM-DD"
+        }
+      ]
+    },
+    {
+      "name": "search_stations",
+      "description": "搜索火车站信息",
+      "parameters": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "required": true,
+          "description": "车站名称关键词"
+        },
+        {
+          "name": "exact_match",
+          "type": "boolean",
+          "required": false,
+          "description": "是否精确匹配，默认false"
+        }
+      ]
+    },
+    {
+      "name": "get_price_info",
+      "description": "查询指定车次的票价信息",
+      "parameters": [
+        {
+          "name": "train_no",
+          "type": "string",
+          "required": true,
+          "description": "车次号"
+        },
+        {
+          "name": "from_station",
+          "type": "string",
+          "required": true,
+          "description": "出发站"
+        },
+        {
+          "name": "to_station",
+          "type": "string",
+          "required": true,
+          "description": "到达站"
+        }
+      ]
+    }
+  ],
+  
+  "installation": {
+    "command": "npm install @joooook/12306-mcp",
+    "config": {
+      "mcpServers": {
+        "12306-mcp": {
+          "command": "node",
+          "args": ["node_modules/@joooook/12306-mcp/dist/index.js"]
+        }
+      }
+    },
+    "notes": "无需API Key，直接使用12306公开数据接口"
+  },
+  
+  "examples": [
+    {
+      "title": "查询火车票",
+      "description": "查询北京到上海的高铁票",
+      "code": "{\n  \"tool\": \"query_tickets\",\n  \"parameters\": {\n    \"from_station\": \"北京\",\n    \"to_station\": \"上海\",\n    \"train_date\": \"2025-06-25\",\n    \"train_type\": \"G\"\n  }\n}",
+      "result": "返回15趟高铁车次，包含余票、价格、时刻等信息"
+    },
+    {
+      "title": "车次详情",
+      "description": "查看G1次列车的详细时刻表",
+      "code": "{\n  \"tool\": \"get_train_info\",\n  \"parameters\": {\n    \"train_no\": \"G1\",\n    \"train_date\": \"2025-06-25\"\n  }\n}",
+      "result": "显示G1次列车完整时刻表和停靠站信息"
+    },
+    {
+      "title": "车站搜索",
+      "description": "搜索包含'虹桥'的车站",
+      "code": "{\n  \"tool\": \"search_stations\",\n  \"parameters\": {\n    \"keyword\": \"虹桥\",\n    \"exact_match\": false\n  }\n}",
+      "result": "找到上海虹桥、上海虹桥T1、上海虹桥T2等车站"
+    }
+  ],
+  
+  "reviews": {
+    "rating": 4.3,
+    "count": 45,
+    "distribution": {
+      "5": 25,
+      "4": 15,
+      "3": 3,
+      "2": 1,
+      "1": 1
+    }
+  }
+} 

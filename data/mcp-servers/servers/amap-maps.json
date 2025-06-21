@@ -1,0 +1,168 @@
+{
+  "id": "amap-maps",
+  "name": "高德地图",
+  "packageName": "@amap/amap-maps",
+  "description": "高德地图是一个支持任何MCP协议客户端的服务器，允许用户轻松利用高德地图MCP服务器获取各种基于位置的服务。",
+  "longDescription": "高德地图MCP服务器提供全面的地理位置服务，包括地址解析、逆地理编码、路径规划、POI搜索等功能。基于高德地图强大的地理数据和算法，为AI应用提供精准的位置服务支持。支持中国大陆地区的详细地图数据和实时交通信息。",
+  "category": "location-services",
+  "tags": ["地图服务", "位置查询", "路径规划", "POI搜索", "地理编码"],
+  "type": "hosted",
+  
+  "stats": {
+    "downloads": 66000,
+    "stars": 13,
+    "views": 18500,
+    "lastUpdated": "2025-06-19T16:20:00Z"
+  },
+  
+  "author": {
+    "name": "amap",
+    "avatar": "/images/authors/amap.png",
+    "url": "https://lbs.amap.com/"
+  },
+  
+  "technical": {
+    "repository": "https://github.com/amap-demo/amap-mcp-server",
+    "documentation": "https://lbs.amap.com/api/mcp-server/guide",
+    "homepage": "https://lbs.amap.com/",
+    "license": "Apache-2.0",
+    "version": "2.1.0",
+    "requirements": ["高德地图API Key", "网络连接"]
+  },
+  
+  "tools": [
+    {
+      "name": "geocode",
+      "description": "地址转坐标，将结构化地址转换为经纬度坐标",
+      "parameters": [
+        {
+          "name": "address",
+          "type": "string",
+          "required": true,
+          "description": "要查询的地址信息"
+        },
+        {
+          "name": "city",
+          "type": "string",
+          "required": false,
+          "description": "指定查询的城市范围"
+        }
+      ]
+    },
+    {
+      "name": "regeo",
+      "description": "坐标转地址，将经纬度坐标转换为结构化地址信息",
+      "parameters": [
+        {
+          "name": "location",
+          "type": "string",
+          "required": true,
+          "description": "经纬度坐标，格式：经度,纬度"
+        },
+        {
+          "name": "radius",
+          "type": "integer",
+          "required": false,
+          "description": "搜索半径，单位：米，默认1000"
+        }
+      ]
+    },
+    {
+      "name": "route_planning",
+      "description": "路径规划，计算两点间的最优路径",
+      "parameters": [
+        {
+          "name": "origin",
+          "type": "string",
+          "required": true,
+          "description": "起点坐标，格式：经度,纬度"
+        },
+        {
+          "name": "destination",
+          "type": "string",
+          "required": true,
+          "description": "终点坐标，格式：经度,纬度"
+        },
+        {
+          "name": "strategy",
+          "type": "string",
+          "required": false,
+          "description": "路径策略：0=速度优先，1=费用优先，2=距离优先，3=不走高速"
+        }
+      ]
+    },
+    {
+      "name": "poi_search",
+      "description": "POI搜索，查找周边兴趣点信息",
+      "parameters": [
+        {
+          "name": "keywords",
+          "type": "string",
+          "required": true,
+          "description": "搜索关键词"
+        },
+        {
+          "name": "location",
+          "type": "string",
+          "required": false,
+          "description": "中心点坐标，格式：经度,纬度"
+        },
+        {
+          "name": "radius",
+          "type": "integer",
+          "required": false,
+          "description": "搜索半径，单位：米，默认3000"
+        }
+      ]
+    }
+  ],
+  
+  "installation": {
+    "command": "npm install @amap/amap-maps-mcp",
+    "config": {
+      "mcpServers": {
+        "amap-maps": {
+          "command": "node",
+          "args": ["node_modules/@amap/amap-maps-mcp/dist/index.js"],
+          "env": {
+            "AMAP_API_KEY": "your_amap_api_key"
+          }
+        }
+      }
+    },
+    "notes": "需要申请高德地图API Key，可在高德开放平台免费获取"
+  },
+  
+  "examples": [
+    {
+      "title": "地址转坐标",
+      "description": "将北京天安门的地址转换为经纬度坐标",
+      "code": "{\n  \"tool\": \"geocode\",\n  \"parameters\": {\n    \"address\": \"北京市东城区天安门广场\",\n    \"city\": \"北京\"\n  }\n}",
+      "result": "经度: 116.397128, 纬度: 39.916527"
+    },
+    {
+      "title": "路径规划",
+      "description": "规划从北京站到首都机场的最优路径",
+      "code": "{\n  \"tool\": \"route_planning\",\n  \"parameters\": {\n    \"origin\": \"116.427268,39.903738\",\n    \"destination\": \"116.584556,40.080111\",\n    \"strategy\": \"0\"\n  }\n}",
+      "result": "距离: 32.5公里, 预计用时: 45分钟, 路径详情已返回"
+    },
+    {
+      "title": "POI搜索",
+      "description": "搜索天安门周边的餐厅",
+      "code": "{\n  \"tool\": \"poi_search\",\n  \"parameters\": {\n    \"keywords\": \"餐厅\",\n    \"location\": \"116.397128,39.916527\",\n    \"radius\": 2000\n  }\n}",
+      "result": "找到38家餐厅，包含名称、地址、评分等详细信息"
+    }
+  ],
+  
+  "reviews": {
+    "rating": 4.6,
+    "count": 89,
+    "distribution": {
+      "5": 65,
+      "4": 18,
+      "3": 4,
+      "2": 1,
+      "1": 1
+    }
+  }
+} 
