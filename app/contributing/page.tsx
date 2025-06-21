@@ -39,7 +39,7 @@ const steps = [
     step: '1',
     title: 'Fork 项目',
     description: '在 GitHub 上 Fork ChimeMCP 仓库到您的账户',
-    code: 'git clone https://github.com/yourusername/chimemcp.git'
+                    code: 'git clone https://github.com/ChimeMCP/chimemcp.git'
   },
   {
     step: '2',

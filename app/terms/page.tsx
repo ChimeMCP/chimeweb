@@ -16,7 +16,7 @@ export default function TermsPage() {
             服务条款
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            生效日期：2024年12月26日 | 最后更新：2024年12月26日
+            生效日期：2025年6月21日 | 最后更新：2025年6月21日
           </p>
         </div>
 
@@ -348,7 +348,7 @@ export default function TermsPage() {
               <div className="bg-gray-900 text-white rounded-lg p-6 text-center">
                 <h3 className="text-lg font-semibold mb-2">条款生效</h3>
                 <p className="text-sm opacity-90">
-                  本服务条款自2024年12月26日起生效。使用我们的服务即表示您已阅读、
+                  本服务条款自2025年6月21日起生效。使用我们的服务即表示您已阅读、
                   理解并同意受本条款约束。
                 </p>
               </div>

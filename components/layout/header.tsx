@@ -73,7 +73,7 @@ export function Header() {
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
-            href="https://github.com/your-username/chimemcp"
+            href="https://github.com/ChimeMCP/chimemcp"
             className="text-sm font-semibold leading-6 text-gray-900 hover:text-chime-gold"
           >
             GitHub
@@ -114,7 +114,7 @@ export function Header() {
               </Link>
             ))}
             <Link
-              href="https://github.com/your-username/chimemcp"
+              href="https://github.com/ChimeMCP/chimemcp"
               className="block px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 rounded-md"
               onClick={() => setMobileMenuOpen(false)}
             >

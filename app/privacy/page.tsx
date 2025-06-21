@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             隐私政策
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            生效日期：2024年12月26日 | 最后更新：2024年12月26日
+            生效日期：2025年6月21日 | 最后更新：2025年6月21日
           </p>
         </div>
 

@@ -242,7 +242,7 @@ export default function FeedbackPage() {
                   </svg>
                   <div>
                     <div className="text-sm font-medium text-gray-900">GitHub</div>
-                    <div className="text-sm text-gray-600">github.com/chimemcp</div>
+                    <div className="text-sm text-gray-600">github.com/ChimeMCP/chimemcp</div>
                   </div>
                 </div>
               </div>

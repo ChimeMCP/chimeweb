@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const releases = [
   {
     version: 'v1.2.0',
-    date: '2024-12-26',
+    date: '2025-06-21',
     type: 'major',
     title: '重大功能更新',
     description: '引入全新的可视化工作流编辑器和智能MCP推荐系统',
@@ -38,7 +38,7 @@ const releases = [
   },
   {
     version: 'v1.1.3',
-    date: '2024-12-15',
+    date: '2025-06-15',
     type: 'patch',
     title: '稳定性和用户体验改进',
     description: '专注于提升系统稳定性和用户使用体验',
@@ -62,7 +62,7 @@ const releases = [
   },
   {
     version: 'v1.1.0',
-    date: '2024-12-01',
+    date: '2025-06-01',
     type: 'minor',
     title: '模板市场和协作功能',
     description: '推出模板市场，支持团队协作和模板分享',
@@ -86,7 +86,7 @@ const releases = [
   },
   {
     version: 'v1.0.0',
-    date: '2024-11-15',
+    date: '2025-05-15',
     type: 'major',
     title: '正式版发布',
     description: 'ChimeMCP 1.0正式发布，开启AI自动化新时代',
@@ -223,7 +223,7 @@ export default function ChangelogPage() {
           </p>
           <div className="flex items-center justify-center gap-4">
             <a
-              href="https://github.com/your-username/chimemcp"
+              href="https://github.com/ChimeMCP/chimemcp"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">

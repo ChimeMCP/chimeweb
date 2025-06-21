@@ -129,14 +129,14 @@ export default function CommunityPage() {
   const events = [
     {
       title: '编钟模板开发工作坊',
-      date: '2024年2月15日',
+      date: '2025年2月15日',
       type: '线上活动',
       participants: 150,
       description: '学习如何创建高质量的YAML模板，与核心开发者面对面交流'
     },
     {
       title: 'MCP生态开发者大会',
-      date: '2024年3月20日',
+      date: '2025年3月20日',
       type: '线下活动',
       participants: 300,
       description: '探讨MCP协议的未来发展，分享最新的技术进展和应用案例'

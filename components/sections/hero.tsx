@@ -158,7 +158,7 @@ export function HeroSection() {
             </Link>
             
             <Link
-              href="https://github.com/your-username/chimemcp"
+              href="https://github.com/ChimeMCP/chimemcp"
               className="text-sm font-semibold leading-6 text-gray-900 hover:text-chime-gold transition-colors duration-200 flex items-center gap-2"
             >
               <Github className="h-4 w-4" />

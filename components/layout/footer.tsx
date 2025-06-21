@@ -16,7 +16,7 @@ const footerNavigation = {
   ],
   community: [
     { name: '社区', href: '/community' },
-    { name: 'GitHub', href: 'https://github.com/your-username/chimemcp' },
+    { name: 'GitHub', href: 'https://github.com/ChimeMCP/chimemcp' },
     { name: '贡献指南', href: '/contributing' },
     { name: '问题反馈', href: '/feedback' },
   ],
@@ -107,7 +107,7 @@ export function Footer() {
         
         <div className="mt-10 border-t border-gray-900/10 pt-10 text-center">
           <p className="text-xs leading-5 text-gray-500">
-            &copy; 2024 编钟 ChimeMCP. 采用 MIT 许可协议开源.
+            &copy; 2025 编钟 ChimeMCP by coso huang. 采用 MIT 许可协议开源.
           </p>
         </div>
       </div>

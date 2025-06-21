@@ -58,7 +58,7 @@ export function CTASection() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href="https://github.com/your-username/chimemcp"
+                href="https://github.com/ChimeMCP/chimemcp"
                 className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-8 py-4 text-lg font-semibold text-gray-900 shadow-sm hover:bg-gray-50 transition-all duration-300"
               >
                 <Github className="mr-2 h-5 w-5" />

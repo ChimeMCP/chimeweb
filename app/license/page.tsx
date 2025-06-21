@@ -34,7 +34,7 @@ export default function LicensePage() {
             </p>
             <div className="flex items-center justify-center gap-6">
               <a
-                href="https://github.com/your-username/chimemcp"
+                href="https://github.com/ChimeMCP/chimemcp"
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 transition-colors"
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -115,7 +115,7 @@ export default function LicensePage() {
               <div className="space-y-6 font-mono text-sm">
                 <div className="text-center border-b border-gray-300 pb-4">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">MIT License</h3>
-                  <p className="text-gray-600">Copyright (c) 2024 ChimeMCP</p>
+                  <p className="text-gray-600">Copyright (c) 2025 ChimeMCP by coso huang</p>
                 </div>
 
                 <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -154,7 +154,7 @@ export default function LicensePage() {
               <div className="space-y-4 text-gray-700">
                 <p className="text-center font-semibold text-blue-900 border-b border-blue-300 pb-4">
                   MIT 许可协议<br/>
-                  版权所有 (c) 2024 ChimeMCP
+                  版权所有 (c) 2025 ChimeMCP by coso huang
                 </p>
 
                 <p>
@@ -280,7 +280,7 @@ export default function LicensePage() {
             </p>
             <div className="flex items-center justify-center gap-4">
               <a
-                href="https://github.com/your-username/chimemcp"
+                href="https://github.com/ChimeMCP/chimemcp"
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 transition-colors"
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
