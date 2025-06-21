@@ -267,13 +267,13 @@ steps:
     }
   }
 
-  const levelColors = {
+  const levelColors: Record<string, string> = {
     essential: 'bg-red-100 text-red-800',
     important: 'bg-yellow-100 text-yellow-800', 
     advanced: 'bg-blue-100 text-blue-800'
   }
 
-  const levelLabels = {
+  const levelLabels: Record<string, string> = {
     essential: '必须掌握',
     important: '重要建议',
     advanced: '进阶技巧'
