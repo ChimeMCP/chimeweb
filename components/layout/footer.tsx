@@ -11,7 +11,7 @@ const footerNavigation = {
   resources: [
     { name: '文档', href: '/docs' },
     { name: '模板市场', href: '/templates' },
-    { name: 'API 参考', href: '/docs/api' },
+    { name: '能力手册', href: '/docs/capabilities' },
     { name: '最佳实践', href: '/docs/best-practices' },
   ],
   community: [

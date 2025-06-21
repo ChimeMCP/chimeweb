@@ -1,0 +1,41 @@
+# ChimeMCP 项目概览
+
+## 项目简介
+
+这是编钟(ChimeMCP)的官方网站项目，基于Next.js 14构建的现代化Web应用。编钟是一个基于MCP协议的声明式工作流编排工具，致力于重新定义AI时代的自动化协作。
+
+## 核心概念
+
+- **编钟(ChimeMCP)**: 声明式自动化协作平台，实现"MCP 唤醒 MCP"的工作流编排
+- **MCP Market**: MCP Server的生态市场，提供丰富的自动化工具
+- **YAML模板**: 声明式工作流定义格式，简化复杂任务编排
+
+## 项目结构
+
+项目主要代码在 `chimeweb/` 目录中，这是一个标准的Next.js 14应用：
+
+```
+chimeweb/
+├── app/                    # Next.js App Router页面
+├── components/             # React组件库
+├── lib/                    # 工具函数和类型定义  
+├── data/                   # 静态数据文件(JSON)
+├── public/                 # 静态资源
+└── 配置文件               # TypeScript, Tailwind等
+```
+
+## 技术栈
+
+- **框架**: Next.js 14 (App Router)
+- **语言**: TypeScript + React 18
+- **样式**: Tailwind CSS + 编钟主题
+- **动画**: Framer Motion
+- **组件**: shadcn/ui + Lucide图标
+- **部署**: Vercel (推荐)
+
+## 开发规范
+
+- 所有组件使用TypeScript和函数式组件
+- 遵循编钟品牌设计系统([tailwind.config.ts](mdc:tailwind.config.ts))
+- 使用响应式设计原则
+- 保持良好的代码组织和类型安全

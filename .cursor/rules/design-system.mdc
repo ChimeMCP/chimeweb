@@ -1,0 +1,55 @@
+# 编钟设计系统
+
+## 品牌色彩
+
+编钟主题色彩定义在 [tailwind.config.ts](mdc:tailwind.config.ts) 中：
+
+```typescript
+colors: {
+  chime: {
+    gold: "#D4AF37",      // 主要品牌色
+    bronze: "#CD7F32",    // 辅助色
+    copper: "#B87333",    // 装饰色
+    dark: "#1A1A1A",      // 深色主题
+    light: "#F8F9FA",     // 浅色主题
+  }
+}
+```
+
+## 使用规范
+
+### 颜色应用
+- `text-chime-gold` - 重要文本和CTA按钮
+- `bg-chime-gold/10` - 背景色，带透明度
+- `border-chime-gold/20` - 边框色
+- `from-chime-gold/10 to-chime-bronze/10` - 渐变背景
+
+### 字体系统
+- `font-heading` - 标题字体 (Space Grotesk)
+- `font-sans` - 正文字体 (Inter)
+
+## 组件库
+
+### UI组件目录
+- [components/ui/](mdc:components/ui/) - 基础UI组件
+- [components/sections/](mdc:components/sections/) - 页面区块组件
+- [components/docs/](mdc:components/docs/) - 文档专用组件
+- [components/mcp-market/](mdc:components/mcp-market/) - 市场页面组件
+
+### 动画系统
+使用Framer Motion实现：
+- 页面进入动画
+- 悬停交互效果
+- 编钟主题动画：`animate-chime-ring`, `animate-pulse-glow`
+
+## 响应式设计
+
+断点设置：
+- `sm` (640px) - 平板竖屏
+- `md` (768px) - 平板横屏
+- `lg` (1024px) - 桌面
+- `xl` (1280px) - 大屏桌面
+
+## CSS变量
+
+全局CSS变量在 [app/globals.css](mdc:app/globals.css) 中定义，支持明暗主题切换。

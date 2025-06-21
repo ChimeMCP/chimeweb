@@ -209,9 +209,16 @@ export default function ProductPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-heading mb-4">
               🎯 典型应用场景
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mb-6">
               看看编钟如何在不同领域发挥强大的自动化能力
             </p>
+            <a
+              href="/scenarios"
+              className="inline-flex items-center px-6 py-3 rounded-lg bg-amber-600 text-white font-medium hover:bg-amber-700 transition-colors"
+            >
+              探索更多应用场景
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </motion.div>
 
           <div className="space-y-12">

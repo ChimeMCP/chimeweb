@@ -1,0 +1,40 @@
+# Cursor Rules 索引
+
+欢迎使用ChimeMCP项目的Cursor Rules！这些规则将帮助AI更好地理解项目结构和开发规范。
+
+## 🗂️ 规则文件
+
+### 核心指南
+- [project-overview.mdc](mdc:.cursor/rules/project-overview.mdc) - 项目概览和技术栈
+- [development-workflow.mdc](mdc:.cursor/rules/development-workflow.mdc) - 开发工作流和环境配置
+
+### 设计与组件
+- [design-system.mdc](mdc:.cursor/rules/design-system.mdc) - 编钟设计系统和品牌规范
+
+## 📁 项目快速导航
+
+### 关键文件
+- [package.json](mdc:package.json) - 项目依赖和脚本配置
+- [tailwind.config.ts](mdc:tailwind.config.ts) - Tailwind和编钟主题配置
+- [lib/types.ts](mdc:lib/types.ts) - TypeScript类型定义
+- [lib/utils.ts](mdc:lib/utils.ts) - 通用工具函数
+
+### 核心目录
+- [app/](mdc:app/) - Next.js App Router页面
+- [components/](mdc:components/) - React组件库
+- [data/](mdc:data/) - 静态数据文件
+- [public/](mdc:public/) - 静态资源
+
+## 🚀 快速开始
+
+1. **环境设置**: 参考 [development-workflow.mdc](mdc:.cursor/rules/development-workflow.mdc)
+2. **设计规范**: 参考 [design-system.mdc](mdc:.cursor/rules/design-system.mdc)
+
+## 📋 开发检查清单
+
+- [ ] 遵循TypeScript类型安全
+- [ ] 使用编钟主题色彩系统
+- [ ] 保持响应式设计
+- [ ] 添加适当的动画效果
+- [ ] 测试多设备兼容性
+- [ ] 优化性能和SEO

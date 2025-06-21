@@ -54,15 +54,15 @@ export default function DocsPage() {
       ]
     },
     {
-      title: 'API参考',
-      description: '完整的API文档和示例代码',
+      title: '能力手册',
+      description: '编钟的完整能力说明和使用指南',
       icon: FileText,
       color: 'from-orange-500 to-red-600',
       docs: [
+        { title: '能力总览', description: '编钟能帮你做什么？一目了然', time: '5分钟', href: '/docs/capabilities' },
         { title: 'CLI命令参考', description: '所有命令行接口的详细说明', time: '15分钟', href: '/docs/cli-reference' },
         { title: 'YAML Schema', description: '模板配置的完整规范', time: '20分钟', href: '/docs/yaml-schema' },
-        { title: 'MCP协议接口', description: 'Model Context Protocol集成', time: '25分钟', href: '/docs/mcp-protocol' },
-        { title: 'Webhook API', description: '外部系统集成接口', time: '18分钟', href: '/docs/webhook-api' }
+        { title: 'MCP协议接口', description: 'Model Context Protocol集成', time: '25分钟', href: '/docs/mcp-protocol' }
       ]
     }
   ]
@@ -170,10 +170,10 @@ export default function DocsPage() {
                 YAML语法
               </a>
               <a
-                href="/docs/api"
+                href="/docs/capabilities"
                 className="inline-flex items-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 font-medium hover:bg-gray-50 transition-colors"
               >
-                API参考
+                能力手册
               </a>
             </div>
           </motion.div>
