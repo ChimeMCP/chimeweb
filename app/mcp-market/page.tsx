@@ -7,12 +7,12 @@ import { CategoryFilter } from '@/components/mcp-market/CategoryFilter'
 import { FeaturedSection } from '@/components/mcp-market/FeaturedSection'
 import { ServerList } from '@/components/mcp-market/ServerList'
 import { SearchBar } from '@/components/mcp-market/SearchBar'
-import type { MCPMarketIndex, Category, MCPServer, PaginationInfo } from '@/lib/types'
+import type { MCPMarketIndex, Category, MCPServer, PaginationInfo, FeaturedItem } from '@/lib/types'
 
 interface MCPMarketData {
   marketIndex: MCPMarketIndex
   categories: Category[]
-  featuredConfig: { featured: string[] }
+  featuredConfig: { featured: FeaturedItem[] }
   serversData: {
     servers: MCPServer[]
     pagination: PaginationInfo

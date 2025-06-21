@@ -134,3 +134,11 @@ export interface PaginationInfo {
   total: number
   totalPages: number
 } 
+export interface FeaturedItem {
+  id: string
+  title: string
+  subtitle: string
+  image: string
+  highlight: string
+  badge: string
+}
