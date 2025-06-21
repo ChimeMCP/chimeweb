@@ -1,0 +1,140 @@
+<svg width="1000" height="500" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1000" height="500" fill="#ffffff"/>
+  
+  <!-- 标题 -->
+  <text x="500" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold" fill="#1f2937">使用编钟前 VS 使用编钟后</text>
+  
+  <!-- 分割线 -->
+  <line x1="500" y1="70" x2="500" y2="460" stroke="#e5e7eb" stroke-width="3" stroke-dasharray="8,8"/>
+  
+  <!-- 左侧：使用前 -->
+  <g id="before">
+    <!-- 背景区域 -->
+    <rect x="30" y="80" width="420" height="350" rx="20" fill="#fef2f2" stroke="#fecaca" stroke-width="2"/>
+    
+    <!-- 标题 -->
+    <rect x="50" y="100" width="380" height="50" rx="12" fill="#fee2e2"/>
+    <text x="240" y="135" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" fill="#dc2626">😤 使用前：混乱低效</text>
+    
+    <!-- 用户 -->
+    <circle cx="100" cy="200" r="30" fill="#3b82f6"/>
+    <text x="100" y="208" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="white">用户</text>
+    <text x="100" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6b7280">发起需求</text>
+    
+    <!-- AI混乱状态 -->
+    <rect x="180" y="170" width="100" height="60" rx="12" fill="#fbbf24"/>
+    <text x="230" y="195" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="white">AI困惑</text>
+    <text x="230" y="215" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white">不知道用啥工具</text>
+    <text x="230" y="255" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6b7280">随机选择工具</text>
+    
+    <!-- 混乱的工具调用 -->
+    <g id="chaotic-tools">
+      <!-- 错误尝试1 -->
+      <rect x="320" y="140" width="80" height="35" rx="6" fill="#ef4444"/>
+      <text x="360" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">保存到桌面</text>
+      <text x="410" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#dc2626">❌</text>
+      
+      <!-- 错误尝试2 -->
+      <rect x="320" y="185" width="80" height="35" rx="6" fill="#ef4444"/>
+      <text x="360" y="205" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">创建Gist</text>
+      <text x="410" y="203" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#dc2626">❌</text>
+      
+      <!-- 错误尝试3 -->
+      <rect x="320" y="230" width="80" height="35" rx="6" fill="#ef4444"/>
+      <text x="360" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">邮件发送</text>
+      <text x="410" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#dc2626">❌</text>
+    </g>
+    
+    <!-- 混乱的箭头 -->
+    <path d="M130 200 L180 200" stroke="#dc2626" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+    <path d="M280 200 Q300 160 320 158" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+    <path d="M280 200 L320 203" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+    <path d="M280 200 Q300 240 320 248" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+    
+    <!-- 结果 -->
+    <rect x="70" y="300" width="330" height="80" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="2"/>
+    <text x="235" y="325" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">❌ 糟糕结果</text>
+    <text x="235" y="345" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7f1d1d">• 每次结果都不同，无法预期</text>
+    <text x="235" y="360" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7f1d1d">• 耗时2小时，反复试错</text>
+    <text x="235" y="375" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7f1d1d">• 用户挫败感强，体验极差</text>
+    
+    <!-- 时间消耗 -->
+    <circle cx="350" cy="405" r="35" fill="#dc2626"/>
+    <text x="350" y="400" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="white">2小时</text>
+    <text x="350" y="418" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="white">失败</text>
+  </g>
+  
+  <!-- 右侧：使用后 -->
+  <g id="after">
+    <!-- 背景区域 -->
+    <rect x="550" y="80" width="420" height="350" rx="20" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="2"/>
+    
+    <!-- 标题 -->
+    <rect x="570" y="100" width="380" height="50" rx="12" fill="#dcfce7"/>
+    <text x="760" y="135" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" fill="#16a34a">✨ 使用后：和谐高效</text>
+    
+    <!-- 用户 -->
+    <circle cx="620" cy="200" r="30" fill="#3b82f6"/>
+    <text x="620" y="208" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="white">用户</text>
+    <text x="620" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6b7280">一句话需求</text>
+    
+    <!-- 编钟协调 -->
+    <rect x="700" y="170" width="100" height="60" rx="12" fill="#d97706"/>
+    <text x="750" y="195" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="white">🔔 编钟</text>
+    <text x="750" y="215" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white">智能协调</text>
+    <text x="750" y="255" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6b7280">专家模板匹配</text>
+    
+    <!-- 有序的工具调用 -->
+    <g id="ordered-tools">
+      <!-- 成功调用1 -->
+      <rect x="840" y="140" width="80" height="35" rx="6" fill="#22c55e"/>
+      <text x="880" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">crawl-mcp</text>
+      <text x="930" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#16a34a">✅</text>
+      
+      <!-- 成功调用2 -->
+      <rect x="840" y="185" width="80" height="35" rx="6" fill="#22c55e"/>
+      <text x="880" y="205" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">playwright</text>
+      <text x="930" y="203" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#16a34a">✅</text>
+      
+      <!-- 成功调用3 -->
+      <rect x="840" y="230" width="80" height="35" rx="6" fill="#22c55e"/>
+      <text x="880" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">obsidian</text>
+      <text x="930" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#16a34a">✅</text>
+    </g>
+    
+    <!-- 有序的箭头 -->
+    <path d="M650 200 L700 200" stroke="#16a34a" stroke-width="3" fill="none" marker-end="url(#arrowGreen)"/>
+    <path d="M800 200 Q820 160 840 158" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+    <path d="M800 200 L840 203" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+    <path d="M800 200 Q820 240 840 248" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+    
+    <!-- 结果 -->
+    <rect x="590" y="300" width="330" height="80" rx="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="2"/>
+    <text x="755" y="325" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#16a34a">✅ 完美结果</text>
+    <text x="755" y="345" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#15803d">• 每次都是相同的高质量结果</text>
+    <text x="755" y="360" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#15803d">• 30秒完成复杂任务</text>
+    <text x="755" y="375" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#15803d">• 用户体验极佳，一次成功</text>
+    
+    <!-- 时间节省 -->
+    <circle cx="870" cy="405" r="35" fill="#16a34a"/>
+    <text x="870" y="400" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="white">30秒</text>
+    <text x="870" y="418" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="white">成功</text>
+  </g>
+  
+  <!-- 效率对比标识 -->
+  <g id="efficiency-comparison">
+    <rect x="400" y="450" width="200" height="40" rx="20" fill="#f59e0b"/>
+    <text x="500" y="475" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="white">240倍效率提升</text>
+  </g>
+  
+  <!-- 箭头标记定义 -->
+  <defs>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L2,10 L10,6 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L2,10 L10,6 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+</svg> 

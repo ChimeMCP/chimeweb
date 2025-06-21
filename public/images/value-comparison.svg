@@ -1,0 +1,135 @@
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1000" height="600" fill="#ffffff"/>
+  
+  <!-- 标题 -->
+  <text x="500" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold" fill="#1f2937">编钟解决的核心痛点</text>
+  <text x="500" y="65" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#6b7280">AI工具协作用户的真实困扰与完美解决方案</text>
+  
+  <!-- 痛点1 -->
+  <g id="pain-point-1">
+    <!-- 背景区域 -->
+    <rect x="50" y="100" width="400" height="120" rx="16" fill="#fef2f2" stroke="#fecaca" stroke-width="3"/>
+    
+    <!-- 痛点标题 -->
+    <text x="250" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">😡 痛点1：重复性挫败</text>
+    
+    <!-- 痛点描述 -->
+    <text x="250" y="155" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7f1d1d">相同需求，每次都是不同结果</text>
+    <text x="250" y="175" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7f1d1d">今天成功，明天失败，后天又成功</text>
+    <text x="250" y="195" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7f1d1d">无法建立对AI工具的信任感</text>
+    
+    <!-- 图标 -->
+    <circle cx="100" cy="160" r="25" fill="#dc2626"/>
+    <text x="100" y="170" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18">😡</text>
+  </g>
+  
+  <!-- 解决方案1 -->
+  <g id="solution-1">
+    <!-- 背景区域 -->
+    <rect x="550" y="100" width="400" height="120" rx="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="3"/>
+    
+    <!-- 解决方案标题 -->
+    <text x="750" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#16a34a">✅ 解决：98.5%一致性保障</text>
+    
+    <!-- 解决方案描述 -->
+    <text x="750" y="155" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#15803d">专家模板固化最佳实践</text>
+    <text x="750" y="175" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#15803d">相同需求，相同流程，相同结果</text>
+    <text x="750" y="195" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#15803d">建立用户对AI协作的绝对信任</text>
+    
+    <!-- 图标 -->
+    <circle cx="900" cy="160" r="25" fill="#16a34a"/>
+    <text x="900" y="170" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18">✅</text>
+  </g>
+  
+  <!-- 连接箭头1 -->
+  <path d="M450 160 L550 160" stroke="#f59e0b" stroke-width="4" fill="none" marker-end="url(#arrowOrange)"/>
+  <text x="500" y="145" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">编钟解决</text>
+  
+  <!-- 痛点2 -->
+  <g id="pain-point-2">
+    <!-- 背景区域 -->
+    <rect x="50" y="260" width="400" height="120" rx="16" fill="#fef2f2" stroke="#fecaca" stroke-width="3"/>
+    
+    <!-- 痛点标题 -->
+    <text x="250" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">😰 痛点2：学习成本高</text>
+    
+    <!-- 痛点描述 -->
+    <text x="250" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7f1d1d">需要学习各种工具的用法</text>
+    <text x="250" y="335" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7f1d1d">复杂的配置和参数设置</text>
+    <text x="250" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7f1d1d">技术门槛让普通用户望而却步</text>
+    
+    <!-- 图标 -->
+    <circle cx="100" cy="320" r="25" fill="#dc2626"/>
+    <text x="100" y="330" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18">😰</text>
+  </g>
+  
+  <!-- 解决方案2 -->
+  <g id="solution-2">
+    <!-- 背景区域 -->
+    <rect x="550" y="260" width="400" height="120" rx="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="3"/>
+    
+    <!-- 解决方案标题 -->
+    <text x="750" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#16a34a">🎯 解决：零学习成本</text>
+    
+    <!-- 解决方案描述 -->
+    <text x="750" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#15803d">自然语言交互，一句话搞定</text>
+    <text x="750" y="335" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#15803d">无需学习工具，无需配置参数</text>
+    <text x="750" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#15803d">小白用户也能立即上手</text>
+    
+    <!-- 图标 -->
+    <circle cx="900" cy="320" r="25" fill="#16a34a"/>
+    <text x="900" y="330" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18">🎯</text>
+  </g>
+  
+  <!-- 连接箭头2 -->
+  <path d="M450 320 L550 320" stroke="#f59e0b" stroke-width="4" fill="none" marker-end="url(#arrowOrange)"/>
+  <text x="500" y="305" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">编钟解决</text>
+  
+  <!-- 价值总结 -->
+  <g id="value-summary">
+    <!-- 背景区域 -->
+    <rect x="100" y="420" width="800" height="140" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="4"/>
+    
+    <!-- 标题 -->
+    <text x="500" y="460" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="bold" fill="#1f2937">🚀 编钟带来的价值提升</text>
+    
+    <!-- 价值指标 -->
+    <g id="metrics">
+      <!-- 效率提升 -->
+      <g id="efficiency">
+        <rect x="140" y="480" width="160" height="60" rx="12" fill="#f59e0b"/>
+        <text x="220" y="505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="white">240倍</text>
+        <text x="220" y="525" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fef3c7">效率提升</text>
+      </g>
+      
+      <!-- 成功率 -->
+      <g id="success-rate">
+        <rect x="320" y="480" width="160" height="60" rx="12" fill="#16a34a"/>
+        <text x="400" y="505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="white">98.5%</text>
+        <text x="400" y="525" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#d1fae5">成功率</text>
+      </g>
+      
+      <!-- 学习成本 -->
+      <g id="learning-cost">
+        <rect x="500" y="480" width="160" height="60" rx="12" fill="#3b82f6"/>
+        <text x="580" y="505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="white">0门槛</text>
+        <text x="580" y="525" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#dbeafe">技术门槛</text>
+      </g>
+      
+      <!-- 时间成本 -->
+      <g id="time-cost">
+        <rect x="680" y="480" width="160" height="60" rx="12" fill="#8b5cf6"/>
+        <text x="760" y="505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="white">30秒</text>
+        <text x="760" y="525" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#ede9fe">完成任务</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- 箭头标记定义 -->
+  <defs>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L2,10 L10,6 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+</svg> 

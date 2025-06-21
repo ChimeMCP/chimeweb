@@ -85,27 +85,27 @@ export default function AboutPage() {
       description: '编钟项目正式立项，开始MCP协议的深度研究'
     },
     {
-      date: '2025年1月',
+      date: '2024年1月',
       title: '核心架构完成',
       description: '完成声明式工作流引擎的核心架构设计'
     },
     {
-      date: '2025年2月',
+      date: '2024年2月',
       title: '首个MVP发布',
       description: '发布第一个可用版本，支持基础的YAML模板功能'
     },
     {
-      date: '2025年3月',
+      date: '2024年3月',
       title: '社区建立',
       description: '建立开发者社区，发布首批模板库'
     },
     {
-      date: '2025年4月',
+      date: '2024年4月',
       title: '生态扩展',
       description: '支持50+MCP Server，用户突破1000人'
     },
     {
-      date: '2025年5月',
+      date: '2024年5月',
       title: '企业级功能',
       description: '推出企业级监控、日志和安全功能'
     }

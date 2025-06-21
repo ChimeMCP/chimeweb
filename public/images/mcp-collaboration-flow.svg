@@ -1,0 +1,193 @@
+<svg width="1000" height="620" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1000" height="620" fill="#ffffff"/>
+  
+  <!-- 标题 -->
+  <text x="500" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold" fill="#1f2937">"MCP 唤醒 MCP" 协作流程</text>
+  <text x="500" y="65" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#6b7280">30秒完成复杂任务的秘密</text>
+  
+  <!-- 主要流程：4个步骤 -->
+  <g id="main-flow">
+    <!-- 步骤1：用户输入 -->
+    <g id="step1">
+      <rect x="60" y="100" width="190" height="80" rx="12" fill="#3b82f6" stroke="#2563eb" stroke-width="2"/>
+      <text x="155" y="125" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="white">步骤1：用户说话</text>
+      <text x="155" y="145" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#dbeafe">"保存微信文章到Obsidian"</text>
+      <text x="155" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#dbeafe">自然语言交互</text>
+      
+      <!-- 用户图标 -->
+      <circle cx="80" cy="125" r="12" fill="#1d4ed8"/>
+      <text x="80" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="bold" fill="white">用户</text>
+    </g>
+    
+    <!-- 箭头1 -->
+    <path d="M250 140 L290 140" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- 步骤2：编钟理解 -->
+    <g id="step2">
+      <rect x="310" y="100" width="190" height="80" rx="12" fill="#d97706" stroke="#b45309" stroke-width="2"/>
+      <text x="405" y="125" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="white">步骤2：编钟理解</text>
+      <text x="405" y="145" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#fed7aa">解析意图，匹配模板</text>
+      <text x="405" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#fed7aa">专家经验固化</text>
+      
+      <!-- 编钟图标 -->
+      <text x="335" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16">🔔</text>
+    </g>
+    
+    <!-- 箭头2 -->
+    <path d="M500 140 L540 140" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- 步骤3：AI协调 -->
+    <g id="step3">
+      <rect x="560" y="100" width="190" height="80" rx="12" fill="#059669" stroke="#047857" stroke-width="2"/>
+      <text x="655" y="125" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="white">步骤3：AI协调</text>
+      <text x="655" y="145" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#a7f3d0">理解指令，按序调用</text>
+      <text x="655" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#a7f3d0">智能协调机制</text>
+      
+      <!-- AI图标 -->
+      <circle cx="585" cy="125" r="12" fill="#065f46"/>
+      <text x="585" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="bold" fill="white">AI</text>
+    </g>
+    
+    <!-- 箭头3 -->
+    <path d="M750 140 L790 140" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- 步骤4：工具执行 -->
+    <g id="step4">
+      <rect x="810" y="100" width="140" height="80" rx="12" fill="#7c3aed" stroke="#6d28d9" stroke-width="2"/>
+      <text x="880" y="125" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="white">步骤4：执行</text>
+      <text x="880" y="145" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ddd6fe">MCP协同工作</text>
+      <text x="880" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ddd6fe">30秒完成</text>
+    </g>
+  </g>
+  
+  <!-- 时间对比 -->
+  <g id="time-comparison">
+    <rect x="200" y="200" width="200" height="25" rx="12" fill="#dc2626"/>
+    <text x="300" y="217" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="white">传统方式：2小时失败</text>
+    
+    <rect x="600" y="200" width="200" height="25" rx="12" fill="#16a34a"/>
+    <text x="700" y="217" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="white">编钟方式：30秒成功</text>
+  </g>
+  
+  <!-- 详细工具调用流程 -->
+  <g id="detailed-flow">
+    <!-- 标题 -->
+    <text x="500" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">详细执行流程</text>
+    
+    <!-- 工具调用序列 -->
+    <g id="tool-sequence">
+      <!-- 工具1 -->
+      <g id="tool1">
+        <rect x="120" y="320" width="160" height="60" rx="10" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+        <text x="200" y="340" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="white">crawl-mcp</text>
+        <text x="200" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#fef3c7">分析微信文章URL</text>
+        <text x="200" y="370" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#fef3c7">返回浏览器指令</text>
+        
+        <!-- 序号 -->
+        <circle cx="200" cy="290" r="15" fill="#dc2626"/>
+        <text x="200" y="296" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">1</text>
+      </g>
+      
+      <!-- 箭头 -->
+      <path d="M280 350 L330 350" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+      
+      <!-- 工具2 -->
+      <g id="tool2">
+        <rect x="350" y="320" width="160" height="60" rx="10" fill="#8b5cf6" stroke="#7c3aed" stroke-width="2"/>
+        <text x="430" y="340" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="white">playwright-mcp</text>
+        <text x="430" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#ede9fe">执行浏览器自动化</text>
+        <text x="430" y="370" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#ede9fe">获取完整内容</text>
+        
+        <!-- 序号 -->
+        <circle cx="430" cy="290" r="15" fill="#dc2626"/>
+        <text x="430" y="296" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">2</text>
+      </g>
+      
+      <!-- 箭头 -->
+      <path d="M510 350 L560 350" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+      
+      <!-- 工具3 -->
+      <g id="tool3">
+        <rect x="580" y="320" width="160" height="60" rx="10" fill="#10b981" stroke="#059669" stroke-width="2"/>
+        <text x="660" y="340" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="white">obsidian-mcp</text>
+        <text x="660" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d1fae5">保存到Obsidian</text>
+        <text x="660" y="370" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d1fae5">自动分类标签</text>
+        
+        <!-- 序号 -->
+        <circle cx="660" cy="290" r="15" fill="#dc2626"/>
+        <text x="660" y="296" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">3</text>
+      </g>
+      
+      <!-- 完成标记 -->
+      <g id="completion">
+        <circle cx="800" cy="350" r="25" fill="#16a34a"/>
+        <text x="800" y="345" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="white">完成</text>
+        <text x="800" y="360" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white">30秒</text>
+      </g>
+      
+      <!-- 最后箭头 -->
+      <path d="M740 350 L775 350" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    </g>
+  </g>
+  
+  <!-- 核心优势 -->
+  <g id="advantages">
+    <rect x="50" y="420" width="900" height="160" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="500" y="450" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">🚀 核心优势</text>
+    
+    <!-- 优势卡片 -->
+    <g id="advantage-cards">
+      <!-- 优势1 -->
+      <g id="adv1">
+        <rect x="80" y="470" width="180" height="80" rx="12" fill="#dcfce7" stroke="#bbf7d0" stroke-width="2"/>
+        <circle cx="105" cy="490" r="15" fill="#22c55e"/>
+        <text x="105" y="496" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">1</text>
+        <text x="170" y="490" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#059669">专家经验固化</text>
+        <text x="170" y="505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#15803d">每个模板都经过</text>
+        <text x="170" y="518" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#15803d">专家验证</text>
+        <text x="170" y="535" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#059669">98.5%成功率</text>
+      </g>
+      
+      <!-- 优势2 -->
+      <g id="adv2">
+        <rect x="280" y="470" width="180" height="80" rx="12" fill="#dbeafe" stroke="#93c5fd" stroke-width="2"/>
+        <circle cx="305" cy="490" r="15" fill="#3b82f6"/>
+        <text x="305" y="496" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">2</text>
+        <text x="370" y="490" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#2563eb">智能协调机制</text>
+        <text x="370" y="505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#1d4ed8">AI自动调用正确</text>
+        <text x="370" y="518" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#1d4ed8">的工具序列</text>
+        <text x="370" y="535" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#2563eb">240倍效率</text>
+      </g>
+      
+      <!-- 优势3 -->
+      <g id="adv3">
+        <rect x="480" y="470" width="180" height="80" rx="12" fill="#fef3c7" stroke="#fde68a" stroke-width="2"/>
+        <circle cx="505" cy="490" r="15" fill="#f59e0b"/>
+        <text x="505" y="496" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">3</text>
+        <text x="570" y="490" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#d97706">结果一致性</text>
+        <text x="570" y="505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b45309">相同需求每次</text>
+        <text x="570" y="518" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b45309">都是相同结果</text>
+        <text x="570" y="535" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#d97706">告别随机性</text>
+      </g>
+      
+      <!-- 优势4 -->
+      <g id="adv4">
+        <rect x="680" y="470" width="180" height="80" rx="12" fill="#ede9fe" stroke="#c4b5fd" stroke-width="2"/>
+        <circle cx="705" cy="490" r="15" fill="#8b5cf6"/>
+        <text x="705" y="496" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white">4</text>
+        <text x="770" y="490" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#7c3aed">零门槛使用</text>
+        <text x="770" y="505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6d28d9">自然语言交互</text>
+        <text x="770" y="518" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6d28d9">无需学习配置</text>
+        <text x="770" y="535" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#7c3aed">小白也能用</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- 箭头标记定义 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+</svg> 

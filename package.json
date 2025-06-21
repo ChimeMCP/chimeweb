@@ -2,12 +2,6 @@
   "name": "chimemcp-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chimemcp.dev",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ChimeMCP/chimemcp.git"
-  },
-  "author": "coso huang",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
