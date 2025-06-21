@@ -40,10 +40,12 @@ export default function GettingStartedPage() {
             className="mx-auto max-w-4xl text-center"
           >
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl font-heading mb-6">
-              快速开始 🚀
+              3步开始，5分钟上手 ⚡
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              5分钟上手编钟 ChimeMCP，体验"MCP 唤醒 MCP"协作模式
+              零技术门槛，专家经验固化
+              <br />
+              从安装到第一个成功案例，只需5分钟
             </p>
           </motion.div>
         </div>

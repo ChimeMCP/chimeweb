@@ -116,11 +116,12 @@ export default function ProductPage() {
             className="mx-auto max-w-3xl text-center"
           >
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl font-heading mb-6">
-              编钟产品介绍
+              从2小时到30秒 ⚡
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              深入了解编钟如何通过"MCP 唤醒 MCP"协作模式，
-              重新定义AI时代的自动化协作体验
+              专家经验固化，240倍效率提升
+              <br />
+              让AI工具协作从"碰运气"变成"有保障"
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

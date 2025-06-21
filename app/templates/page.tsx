@@ -151,10 +151,12 @@ export default function TemplatesPage() {
             className="mx-auto max-w-3xl text-center"
           >
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl font-heading mb-6">
-              模板市场 🎼
+              专家经验，一键复制 🎯
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              发现由专业开发者精心制作的YAML模板，让复杂的自动化任务变得简单可靠
+              52个专业模板，98.5%成功率保障
+              <br />
+              告别"碰运气"，直接使用验证过的最佳实践
             </p>
             
             {/* 搜索框 */}

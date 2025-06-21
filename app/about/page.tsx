@@ -146,11 +146,12 @@ export default function AboutPage() {
             className="mx-auto max-w-3xl text-center"
           >
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl font-heading mb-6">
-              关于编钟 ℹ️
+              专业团队，可靠保障 🏆
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              我们是一群充满热情的开发者，致力于通过技术创新
-              让AI工具协作变得更加简单、可靠和高效
+              前Google、微软工程师团队
+              <br />
+              98.5%成功率背后的专业保障
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

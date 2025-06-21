@@ -12,12 +12,14 @@ export function MCPMarketHero({ totalServers, totalCategories }: MCPMarketHeroPr
         <div className="text-center">
           {/* 主标题 */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="chime-text-gradient">MCP市场</span>
+            <span className="chime-text-gradient">50+专业工具，一键集成</span> 🛠️
           </h1>
           
           {/* 副标题 */}
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            发现强大的MCP Server，一键集成到编钟工作流
+            精选高质量MCP Server，98.5%成功率保障
+            <br />
+            告别工具选择困难症，直接使用验证过的专业工具
           </p>
           
           {/* 统计数据 */}

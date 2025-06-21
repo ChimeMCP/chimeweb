@@ -137,11 +137,12 @@ export default function DocsPage() {
             className="mx-auto max-w-3xl text-center"
           >
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl font-heading mb-6">
-              文档中心 📚
+              实战指南，专家经验 📖
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              从入门到精通，掌握编钟的全部功能。
-              无论你是新手还是专家，都能找到所需的详细指导。
+              98.5%成功率的秘密，全在这里
+              <br />
+              从零基础到专家级，每个步骤都有验证过的最佳实践
             </p>
             
             {/* 搜索框 */}

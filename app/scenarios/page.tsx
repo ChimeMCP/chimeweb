@@ -396,12 +396,12 @@ const ScenariosPage = () => {
               </div>
             </div>
             <h1 className="text-5xl font-bold mb-6">
-              应用场景导航 🧭
+              真实收益，经过验证 💎
             </h1>
             <p className="text-xl text-amber-100 mb-8 max-w-3xl mx-auto">
-              发现编钟在各行各业的实际应用
+              21个真实案例，240倍效率提升
               <br />
-              找到属于你的自动化解决方案
+              每个场景都有具体数据支撑
             </p>
             
             {/* 统计数据 */}
