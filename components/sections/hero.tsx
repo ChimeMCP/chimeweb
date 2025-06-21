@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { ArrowRight, Github, BookOpen, Zap } from 'lucide-react'
+import { ArrowRight, Github, BookOpen, Zap, TrendingUp, Shield, Users } from 'lucide-react'
 
 export function HeroSection() {
   return (
@@ -117,7 +117,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-6 text-lg leading-8 text-gray-600 sm:text-xl"
           >
-            重新定义AI时代的自动化协作
+            告别"碰运气"，专家经验固化
           </motion.h2>
 
           {/* 主要描述 */}
@@ -127,11 +127,32 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto"
           >
-            从<span className="font-semibold text-red-600">"手动配置N个工具"</span>到
-            <span className="font-semibold text-green-600">"一句话完成复杂任务"</span>
+            从<span className="font-semibold text-red-600">"2小时反复调试"</span>到
+            <span className="font-semibold text-green-600">"30秒一键完成"</span>
             <br />
-            让MCP Server像编钟一样和谐协作，奏出自动化的华美乐章
+            <span className="text-2xl font-bold text-orange-600">240倍效率提升</span>，让AI工具协作从"碰运气"变成"有保障"
           </motion.p>
+
+          {/* 对比图展示 */}
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="mt-12 mb-12"
+          >
+            <div className="bg-white rounded-xl shadow-lg p-6 max-w-4xl mx-auto">
+              <Image
+                src="/images/architecture-before-after.svg"
+                alt="编钟前后对比：从2小时到30秒的效率提升"
+                width={1000}
+                height={500}
+                className="w-full h-auto rounded-lg"
+              />
+              <p className="text-sm text-gray-500 mt-3 text-center">
+                真实案例：微信文章保存到Obsidian，效率提升240倍
+              </p>
+            </div>
+          </motion.div>
 
           {/* 行动按钮 */}
           <motion.div
@@ -158,7 +179,7 @@ export function HeroSection() {
             </Link>
             
             <Link
-              href="https://github.com/your-username/chimemcp"
+              href="https://github.com/ChimeMCP/chimeweb"
               className="text-sm font-semibold leading-6 text-gray-900 hover:text-chime-gold transition-colors duration-200 flex items-center gap-2"
             >
               <Github className="h-4 w-4" />
@@ -171,19 +192,23 @@ export function HeroSection() {
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3"
+            className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4"
           >
+            <div className="text-center">
+              <div className="text-3xl font-bold chime-text-gradient">240x</div>
+              <div className="text-sm text-gray-600">效率提升</div>
+            </div>
             <div className="text-center">
               <div className="text-3xl font-bold chime-text-gradient">98.5%</div>
               <div className="text-sm text-gray-600">成功率</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold chime-text-gradient">30秒</div>
-              <div className="text-sm text-gray-600">平均完成时间</div>
+              <div className="text-3xl font-bold chime-text-gradient">0</div>
+              <div className="text-sm text-gray-600">技术门槛</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold chime-text-gradient">50+</div>
-              <div className="text-sm text-gray-600">模板数量</div>
+              <div className="text-sm text-gray-600">专家模板</div>
             </div>
           </motion.div>
         </div>
